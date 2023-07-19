@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+<h1 id="colorChangeText">Colorful Website</h1>
+
+    <script>
+        function changeTextColor() {
+            var colors = [ "black", "white", "gray", "silver", "maroon", "red", "purple", "fushsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua", "orange"]; // Add more colors if desired
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            document.getElementById("colorChangeText").style.color = randomColor;
+        }
+    
+        setInterval(changeTextColor, 1000); // Call the function every 5 seconds (5000 milliseconds)
+    </script>
+    
+    
+    
+    
+
+    <style> body {
+
+background-color: black;
+color: white;
+
+
+
+
+    }
+
+
+    #video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (height / width) */
+            height: 0;
+            overflow: hidden;
+        }
+        #video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 50%;
+        }
+    
+
+
+
+    </style>
+    
+    
+    <h1></h1>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Video container -->
+    <div id="video-container">
+        <!-- Paste the YouTube embed code here -->
+        <iframe width="280" height="160" src="https://www.youtube.com/embed/OP0jwPOFcTE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+</body>
+</html>
+
